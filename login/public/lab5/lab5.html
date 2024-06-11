@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab5</title>
+</head>
+<body style="border: 2px solid #000; margin-right: 300px; margin-left: 300px; color: white;">
+    
+    <h2 style="margin-left: 80px;">Tell me about your site! Thanks</h2>
+
+    <form style="margin-left: 80px;">
+        <label for="name"><span class="required" style="color: red;">*</span> Name:</label>
+        <input type="text" id="name" name="username" placeholder="first/secondname, lastname" required style="width: 350px; color: white;">
+    </form>
+
+    <br>
+    <label for="Gender" style="margin-left: 80px; color: white;">Gender</label>
+    <select id="Gender" name="Gender" style="color: white;">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+
+    <br><br>
+
+    <form style="margin-left: 80px;">
+        <label for="birthdate"><span class="required" style="color: red;">*</span>Select your birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <label for="age" style="color: white;">Age:</label>
+        <input type="text" id="name" name="username" style="width: 80px; color: white;">
+    </form>
+
+    <br>
+    <label for="Country" style="margin-left: 80px; color: white;">Country</label>
+    <select class="form-select" id="country" name="country" style="color: white;">
+        <option>select country</option>
+        <!-- ... (your country options) ... -->
+    </select>
+
+    <br><br>
+    <label for="email" style="margin-left: 80px; color: white;"><span class="required" style="color: red;">*</span>Email Address:</label>
+    <input type="text" id="email" name="email" required oninput="validateEmail()" style="color: white;">
+
+    <h4 style="color: red; margin-left: 80px;">*this field is required</h4>
+
+    <form style="margin-left: 80px;">
+        <h5 style="color: white;">1. How do you find my web page?</h5>
+        <!-- ... (your radio button options) ... -->
+    </form>
+
+    <form style="margin-left: 80px;">
+        <h5 style="color: white;">2. Did you enjoy the Gallery?</h5>
+        <!-- ... (your radio button options) ... -->
+    </form>
+
+    <h5 style="margin-left: 80px; color: white;">3. How easy did you find it to navigate and find information?</h5>
+    <table border="5" style="margin-left: 80px; color: white;">
+        <!-- ... (your table content) ... -->
+    </table>
+
+    <form style="margin-left: 80px;">
+        <h5 style="color: white;">4. Overall, how would you rate the graphics and look of the site?</h5>
+        <!-- ... (your radio button options) ... -->
+    </form>
+
+    <form style="margin-left: 80px;">
+        <h5 style="color: white;">5. How likely would you be to return to my site?</h5>
+        <!-- ... (your radio button options) ... -->
+    </form>
+
+    <br><br>
+    <form style="margin-left: 80px;">
+        <label style="color: white;">6. What did you like about the site?</label>
+        <br>
+        <textarea id="message" name="message" rows="3" cols="100" style="margin-left: 80px; color: white;"></textarea>
+    </form>
+
+    <br><br>
+    <form style="margin-left: 80px;">
+        <label style="color: white;">7. What did you dislike about the site?</label>
+        <br>
+        <textarea id="message" name="message" rows="3" cols="100" style="margin-left: 80px; color: white;"></textarea>
+    </form>
+
+    <br><br>
+    <form style="margin-left: 80px; margin-bottom: 30px;">
+        <h5 style="color: white;">8. Your contact information (optional)</h5>
+        <label style="color: white;">Email Address:</label>
+        <input type="text" id="email" name="email" required oninput="validateEmail()" style="color: white;">
+        <br><br>
+        <label style="color: white;">Mobile number:</label>
+        <input type="text" id="number" name="number" required oninput="validateEmail()" style="color: white;">
+        <button type="submit" style="color: white;">Submit</button>
+    </form>
+
+</body>
+</html>

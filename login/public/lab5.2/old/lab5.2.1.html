@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Favorite MP3s and Movie</title>
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.15.0/videojs-contrib-hls.min.js"></script>
+</head>
+<body style="margin: 0; padding: 0;">
+	<ul style="list-style-type: none; margin: 0; padding: 10px; overflow: hidden; background-color: #A0522D;">
+    	<li style="float: right; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; margin-right: 100px;">My favorite mp3s and movie......</li>
+	</ul>
+	<br>	
+	<h3 style="margin-left: 20px; margin-top: 30px;">Listed in this page are my favorite mp3s.</h3>
+	  <table border="1" style="margin-left: 20px;">
+        <tr>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Size</th>
+            <th>Mp3</th>
+        </tr>
+        <tr>
+            <td>Juan Karlos</td>
+            <td>Ere</td>
+            <td>1.43 MB</td>
+            <td>
+            	<audio controls>
+        			<source src="music\ere.mp3" type="audio/mpeg">
+    			</audio>
+            </td>
+        </tr>
+        <tr>
+            <td>Noah Alejandre</td>
+            <td>Ginanun Lang</td>
+            <td>2.77 MB</td>
+            <td>
+            	<audio controls>
+        			<source src="music\Noah.mp3" type="audio/mpeg">
+    			</audio>
+            </td>
+        </tr>
+        <tr>
+            <td>Maki</td>
+            <td>Saan?</td>
+            <td>5.24 MB</td>
+            <td>
+            	<audio controls>
+        			<source src="music\Saan.mp3" type="audio/mpeg">
+    			</audio>
+            </td>
+        </tr>
+        <tr>
+            <td>Dilaw</td>
+            <td>Uhaw</td>
+            <td>4.12 MB</td>
+            <td>
+            	<audio controls>
+        			<source src="music\dilaw.mp3" type="audio/mpeg">
+    			</audio>
+            </td>
+        </tr>
+        <tr>
+            <td>Zack Tabudlo</td>
+            <td>Pano</td>
+            <td>6.16 MB</td>
+            <td>
+            	<audio controls>
+        			<source src="music\pano.mp3" type="audio/mpeg">
+    			</audio>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <h3 style="margin-left: 20px; margin-top: 30px;">Below is one of my favorite movie of all times.</h3>
+
+    <table border="1" style="margin-left: 20px; margin-bottom: 40px;">
+        <tr>
+            <th>Title</th>
+            <th>Size</th>
+            <th>Movie</th>
+        </tr>
+        <tr>
+            <td>Taken</td>
+            <td>1.43 GB</td>
+            <td>
+            	<video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup='{}'>
+                    <source src="https://xex.stluserehtem.com/_v10/6494c61b19b7642452077f36c3b3b00247bca184e161818c8ab7ef733fb3a6e8df5e2fa880c82ffc6485afd040142c5bb5bd44e509b208a2e2e1801df347203657bae5d5b2f0aac1eed01d911d69293f08cfe464b9b2193c00f0a79cb415667ef305c291d6d5fc7e4a6f7f64605270e98905b842e149e192f3e08f84473477f20a14f4bda986d93afab19890c26ee157/playlist.m3u8" type="application/x-mpegURL">
+                </video>
+            </td>
+        </tr>
+
+        <script>
+  var player = videojs('my-video');
+        
+</script>
+
+
+<br><br><br>
+</body>	
+</html>

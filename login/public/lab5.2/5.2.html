@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Favorite Mp3s and Movies</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+
+</head>
+<body>
+   <div class="navbar">
+    <h1>My Favorite Mp3s and Movie</h1>
+    </div>
+
+
+  <div class="wrapper">
+    <div class="top-bar">
+      
+      <span>Now Playing</span>
+      
+    </div>
+    <div class="img-area">
+      <img src="" alt="">
+    </div>
+    <div class="song-details">
+      <p class="name"></p>
+      <p class="artist"></p>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar">
+        <audio id="main-audio" src=""></audio>
+      </div>
+      <div class="song-timer">
+        <span class="current-time">0:00</span>
+        <span class="max-duration">0:00</span>
+      </div>
+    </div>
+    <div class="controls">
+      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+      <i id="prev" class="material-icons">skip_previous</i>
+      <div class="play-pause">
+        <i class="material-icons play">play_arrow</i>
+      </div>
+      <i id="next" class="material-icons">skip_next</i>
+      <i id="more-music" class="material-icons">queue_music</i>
+    </div>
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <i class= "list material-icons">queue_music</i>
+          <span>Music list</span>
+        </div>
+        <i id="close" class="material-icons">close</i>
+      </div>
+      <ul>
+        <!-- here li list are coming from js -->
+      </ul>
+    </div>
+  </div>
+   <br><br>
+
+
+
+<div class="black-block">
+</div>
+<div class="pic">
+  <img src="images\bg2.jpg">
+</div>
+<div class="title">
+  <h1>TAKEN</h1>
+  <h3>HD</h3>
+  <h4>IMDB: 7.8</h3>
+  <h2>94 min</h2>
+  <h5>Overview:</h5>
+  <p>
+    Bryan Mills (Liam Neeson), a former government operative, is trying to reconnect with his daughter, Kim (Maggie Grace). 
+    <br>
+    Then his worst fears become real when sex slavers abduct Kim and her friend shortly after they arrive in Paris for vacation. <br>
+    With just four days until Kim will be auctioned off, Bryan must call on every skill he learned in black ops to rescue her.
+  </p>
+</div>
+
+  <div class="cast">
+    <h1><span class="fistword">Released:</span> 2008-02-18</h1>
+    
+  </div>
+
+   <div class="black">
+    <video
+      id="my-video"
+      class="video-js"
+      controls autoplay
+      preload="auto"
+      width="1400"
+      height="700"
+      data-setup='{}'>
+      <source src="https://xex.stluserehtem.com/_v10/6494c61b19b7642452077f36c3b3b00247bca184e161818c8ab7ef733fb3a6e8df5e2fa880c82ffc6485afd040142c5bb5bd44e509b208a2e2e1801df347203657bae5d5b2f0aac1eed01d911d69293f08cfe464b9b2193c00f0a79cb415667ef305c291d6d5fc7e4a6f7f64605270e98905b842e149e192f3e08f84473477f20a14f4bda986d93afab19890c26ee157/playlist.m3u8" type="application/x-mpegURL">
+    </video>
+    
+  </div>
+
+
+
+
+
+
+
+  <script src="js/music-list.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+  var player = videojs('my-video');
+  </script>
+  
+
+</body>
+</html>
